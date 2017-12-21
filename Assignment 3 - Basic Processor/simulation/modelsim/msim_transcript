@@ -1,0 +1,387 @@
+# do RISC_Processor_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim ALTERA vmap 10.4b Lib Mapping Utility 2015.05 May 27 2015
+# vmap -modelsim_quiet work rtl_work 
+# Copying E:/Software/Quartus/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied E:/Software/Quartus/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {C:/Python27/COL 216 Arm and VHDL/Assignment 3 - Basic Processor/Adder.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+# Start time: 23:30:50 on Mar 15,2016
+# vcom -reportprogress 300 -93 -work work C:/Python27/COL 216 Arm and VHDL/Assignment 3 - Basic Processor/Adder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity Adder
+# -- Compiling architecture behavioural of Adder
+# End time: 23:30:50 on Mar 15,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Python27/COL 216 Arm and VHDL/Assignment 3 - Basic Processor/RISC_Processor.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+# Start time: 23:30:50 on Mar 15,2016
+# vcom -reportprogress 300 -93 -work work C:/Python27/COL 216 Arm and VHDL/Assignment 3 - Basic Processor/RISC_Processor.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity RISC_Processor
+# -- Compiling architecture behavioural of RISC_Processor
+# End time: 23:30:50 on Mar 15,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Python27/COL 216 Arm and VHDL/Assignment 3 - Basic Processor/ALUnit.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+# Start time: 23:30:50 on Mar 15,2016
+# vcom -reportprogress 300 -93 -work work C:/Python27/COL 216 Arm and VHDL/Assignment 3 - Basic Processor/ALUnit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ALUnit
+# -- Compiling architecture behavioural of ALUnit
+# End time: 23:30:50 on Mar 15,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Python27/COL 216 Arm and VHDL/Assignment 3 - Basic Processor/Register_File.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+# Start time: 23:30:50 on Mar 15,2016
+# vcom -reportprogress 300 -93 -work work C:/Python27/COL 216 Arm and VHDL/Assignment 3 - Basic Processor/Register_File.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity Register_File
+# -- Compiling architecture behavioural of Register_File
+# End time: 23:30:50 on Mar 15,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Python27/COL 216 Arm and VHDL/Assignment 3 - Basic Processor/Shifter.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+# Start time: 23:30:50 on Mar 15,2016
+# vcom -reportprogress 300 -93 -work work C:/Python27/COL 216 Arm and VHDL/Assignment 3 - Basic Processor/Shifter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Shifter
+# -- Compiling architecture behavioural of Shifter
+# End time: 23:30:50 on Mar 15,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Python27/COL 216 Arm and VHDL/Assignment 3 - Basic Processor/MUnit.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+# Start time: 23:30:50 on Mar 15,2016
+# vcom -reportprogress 300 -93 -work work C:/Python27/COL 216 Arm and VHDL/Assignment 3 - Basic Processor/MUnit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity MUnit
+# -- Compiling architecture behavioural of MUnit
+# End time: 23:30:50 on Mar 15,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Python27/COL 216 Arm and VHDL/Assignment 3 - Basic Processor/Multiplier.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+# Start time: 23:30:50 on Mar 15,2016
+# vcom -reportprogress 300 -93 -work work C:/Python27/COL 216 Arm and VHDL/Assignment 3 - Basic Processor/Multiplier.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Multiplier
+# -- Compiling architecture behavioural of Multiplier
+# End time: 23:30:50 on Mar 15,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Python27/COL 216 Arm and VHDL/Assignment 3 - Basic Processor/Instr_Mem.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+# Start time: 23:30:50 on Mar 15,2016
+# vcom -reportprogress 300 -93 -work work C:/Python27/COL 216 Arm and VHDL/Assignment 3 - Basic Processor/Instr_Mem.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Instr_Mem
+# -- Compiling architecture behavioural of Instr_Mem
+# End time: 23:30:50 on Mar 15,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Python27/COL 216 Arm and VHDL/Assignment 3 - Basic Processor/Data_Mem.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+# Start time: 23:30:50 on Mar 15,2016
+# vcom -reportprogress 300 -93 -work work C:/Python27/COL 216 Arm and VHDL/Assignment 3 - Basic Processor/Data_Mem.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Data_Mem
+# -- Compiling architecture behavioural of Data_Mem
+# End time: 23:30:50 on Mar 15,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Python27/COL 216 Arm and VHDL/Assignment 3 - Basic Processor/Mux.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+# Start time: 23:30:50 on Mar 15,2016
+# vcom -reportprogress 300 -93 -work work C:/Python27/COL 216 Arm and VHDL/Assignment 3 - Basic Processor/Mux.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Mux
+# -- Compiling architecture behavioural of Mux
+# End time: 23:30:50 on Mar 15,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Python27/COL 216 Arm and VHDL/Assignment 3 - Basic Processor/AddUnit.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+# Start time: 23:30:50 on Mar 15,2016
+# vcom -reportprogress 300 -93 -work work C:/Python27/COL 216 Arm and VHDL/Assignment 3 - Basic Processor/AddUnit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity AddUnit
+# -- Compiling architecture behavioural of AddUnit
+# End time: 23:30:50 on Mar 15,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Python27/COL 216 Arm and VHDL/Assignment 3 - Basic Processor/Andder.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+# Start time: 23:30:50 on Mar 15,2016
+# vcom -reportprogress 300 -93 -work work C:/Python27/COL 216 Arm and VHDL/Assignment 3 - Basic Processor/Andder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity Andder
+# -- Compiling architecture behavioural of Andder
+# End time: 23:30:51 on Mar 15,2016, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Python27/COL 216 Arm and VHDL/Assignment 3 - Basic Processor/Choose.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+# Start time: 23:30:51 on Mar 15,2016
+# vcom -reportprogress 300 -93 -work work C:/Python27/COL 216 Arm and VHDL/Assignment 3 - Basic Processor/Choose.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity Choose
+# -- Compiling architecture behavioural of Choose
+# End time: 23:30:51 on Mar 15,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Python27/COL 216 Arm and VHDL/Assignment 3 - Basic Processor/Sign_Extender.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+# Start time: 23:30:51 on Mar 15,2016
+# vcom -reportprogress 300 -93 -work work C:/Python27/COL 216 Arm and VHDL/Assignment 3 - Basic Processor/Sign_Extender.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Sign_Extender
+# -- Compiling architecture behavioural of Sign_Extender
+# End time: 23:30:51 on Mar 15,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Python27/COL 216 Arm and VHDL/Assignment 3 - Basic Processor/Extender.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+# Start time: 23:30:51 on Mar 15,2016
+# vcom -reportprogress 300 -93 -work work C:/Python27/COL 216 Arm and VHDL/Assignment 3 - Basic Processor/Extender.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Extender
+# -- Compiling architecture behavioural of Extender
+# End time: 23:30:51 on Mar 15,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Python27/COL 216 Arm and VHDL/Assignment 3 - Basic Processor/Mux4.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+# Start time: 23:30:51 on Mar 15,2016
+# vcom -reportprogress 300 -93 -work work C:/Python27/COL 216 Arm and VHDL/Assignment 3 - Basic Processor/Mux4.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Mux4
+# -- Compiling architecture behavioural of Mux4
+# End time: 23:30:51 on Mar 15,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Python27/COL 216 Arm and VHDL/Assignment 3 - Basic Processor/ALU.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+# Start time: 23:30:51 on Mar 15,2016
+# vcom -reportprogress 300 -93 -work work C:/Python27/COL 216 Arm and VHDL/Assignment 3 - Basic Processor/ALU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ALU
+# -- Compiling architecture behavioural of ALU
+# End time: 23:30:51 on Mar 15,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Python27/COL 216 Arm and VHDL/Assignment 3 - Basic Processor/PC.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+# Start time: 23:30:51 on Mar 15,2016
+# vcom -reportprogress 300 -93 -work work C:/Python27/COL 216 Arm and VHDL/Assignment 3 - Basic Processor/PC.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity PC
+# -- Compiling architecture behavioural of PC
+# End time: 23:30:51 on Mar 15,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Python27/COL 216 Arm and VHDL/Assignment 3 - Basic Processor/Flags.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+# Start time: 23:30:51 on Mar 15,2016
+# vcom -reportprogress 300 -93 -work work C:/Python27/COL 216 Arm and VHDL/Assignment 3 - Basic Processor/Flags.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Flags
+# -- Compiling architecture behavioural of Flags
+# End time: 23:30:51 on Mar 15,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Python27/COL 216 Arm and VHDL/Assignment 3 - Basic Processor/Data_Path.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+# Start time: 23:30:51 on Mar 15,2016
+# vcom -reportprogress 300 -93 -work work C:/Python27/COL 216 Arm and VHDL/Assignment 3 - Basic Processor/Data_Path.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Data_Path
+# -- Compiling architecture behavioural of Data_Path
+# ** Warning: C:/Python27/COL 216 Arm and VHDL/Assignment 3 - Basic Processor/Data_Path.vhd(138): (vcom-1013) Initial value of "rad" depends on value of signal "instruction".
+# 
+# ** Warning: C:/Python27/COL 216 Arm and VHDL/Assignment 3 - Basic Processor/Data_Path.vhd(139): (vcom-1013) Initial value of "rad1" depends on value of signal "instruction".
+# 
+# ** Warning: C:/Python27/COL 216 Arm and VHDL/Assignment 3 - Basic Processor/Data_Path.vhd(141): (vcom-1013) Initial value of "wad" depends on value of signal "instruction".
+# 
+# ** Warning: C:/Python27/COL 216 Arm and VHDL/Assignment 3 - Basic Processor/Data_Path.vhd(149): (vcom-1013) Initial value of "in_carry" depends on value of signal "flgsout".
+# 
+# ** Warning: C:/Python27/COL 216 Arm and VHDL/Assignment 3 - Basic Processor/Data_Path.vhd(152): (vcom-1013) Initial value of "imm" depends on value of signal "instruction".
+# 
+# ** Warning: C:/Python27/COL 216 Arm and VHDL/Assignment 3 - Basic Processor/Data_Path.vhd(154): (vcom-1013) Initial value of "imm2" depends on value of signal "instruction".
+# 
+# ** Warning: C:/Python27/COL 216 Arm and VHDL/Assignment 3 - Basic Processor/Data_Path.vhd(159): (vcom-1013) Initial value of "Ibit" depends on value of signal "instruction".
+# 
+# ** Warning: C:/Python27/COL 216 Arm and VHDL/Assignment 3 - Basic Processor/Data_Path.vhd(160): (vcom-1013) Initial value of "immediate" depends on value of signal "instruction".
+# 
+# ** Warning: C:/Python27/COL 216 Arm and VHDL/Assignment 3 - Basic Processor/Data_Path.vhd(162): (vcom-1013) Initial value of "stype" depends on value of signal "instruction".
+# 
+# ** Warning: C:/Python27/COL 216 Arm and VHDL/Assignment 3 - Basic Processor/Data_Path.vhd(163): (vcom-1013) Initial value of "samt" depends on value of signal "instruction".
+# 
+# End time: 23:30:51 on Mar 15,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 10
+# vcom -93 -work work {C:/Python27/COL 216 Arm and VHDL/Assignment 3 - Basic Processor/Controller.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+# Start time: 23:30:51 on Mar 15,2016
+# vcom -reportprogress 300 -93 -work work C:/Python27/COL 216 Arm and VHDL/Assignment 3 - Basic Processor/Controller.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Controller
+# -- Compiling architecture behavioural of Controller
+# ** Warning: C:/Python27/COL 216 Arm and VHDL/Assignment 3 - Basic Processor/Controller.vhd(41): (vcom-1013) Initial value of "instra" depends on value of signal "instruction".
+# 
+# ** Warning: C:/Python27/COL 216 Arm and VHDL/Assignment 3 - Basic Processor/Controller.vhd(42): (vcom-1013) Initial value of "instrb" depends on value of signal "instruction".
+# 
+# End time: 23:30:51 on Mar 15,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+# vcom -93 -work work {C:/Python27/COL 216 Arm and VHDL/Assignment 3 - Basic Processor/Actrl.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+# Start time: 23:30:51 on Mar 15,2016
+# vcom -reportprogress 300 -93 -work work C:/Python27/COL 216 Arm and VHDL/Assignment 3 - Basic Processor/Actrl.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Actrl
+# -- Compiling architecture behavioural of Actrl
+# End time: 23:30:51 on Mar 15,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Python27/COL 216 Arm and VHDL/Assignment 3 - Basic Processor/Bctrl.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+# Start time: 23:30:51 on Mar 15,2016
+# vcom -reportprogress 300 -93 -work work C:/Python27/COL 216 Arm and VHDL/Assignment 3 - Basic Processor/Bctrl.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Bctrl
+# -- Compiling architecture behavioural of Bctrl
+# End time: 23:30:51 on Mar 15,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim work.data_path
+# vsim work.data_path 
+# Start time: 23:30:57 on Mar 15,2016
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
+# Loading work.data_path(behavioural)
+# Loading work.pc(behavioural)
+# Loading work.instr_mem(behavioural)
+# Loading work.mux4(behavioural)
+# Loading work.register_file(behavioural)
+# Loading work.extender(behavioural)
+# Loading work.mux(behavioural)
+# Loading work.shifter(behavioural)
+# Loading work.alu(behavioural)
+# Loading work.alunit(behavioural)
+# Loading work.multiplier(behavioural)
+# Loading work.munit(behavioural)
+# Loading work.adder(behavioural)
+# Loading work.addunit(behavioural)
+# Loading work.andder(behavioural)
+# Loading work.choose(behavioural)
+# Loading work.flags(behavioural)
+# Loading work.data_mem(behavioural)
+# Loading work.sign_extender(behavioural)
+# ** Warning: Design size of 17580 statements exceeds ModelSim Altera Starter recommended capacity.
+# Expect performance to be adversely affected.
+# End time: 23:32:44 on Mar 15,2016, Elapsed time: 0:01:47
+# Errors: 0, Warnings: 1
