@@ -1,5 +1,5 @@
-# COL-216
-Projects done in Computer Architecture, 2016
+# Computer Architecture
+Projects done in COL 216 - Computer Architecture, 2016
 
 0. Some basic programs like factorial, GCD, Horner's Rule and Sorting
 1. Finding Hardy-Ramanujan numbers
